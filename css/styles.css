@@ -14,7 +14,7 @@ list-type-ulli {
 
 @-webkit-keyframes ltr {
   0% {
-    left: 0;
+    left: -30%;
   }
   100% {
     left: 120%;
@@ -22,7 +22,7 @@ list-type-ulli {
 }
 @-webkit-keyframes rtl {
   0% {
-    right: 0;
+    right: -30%;
   }
   100% {
     right: 120%;
@@ -31,13 +31,13 @@ list-type-ulli {
 .animate-ltr {
   -webkit-animation: linear infinite;
   -webkit-animation-name: ltr;
-  -webkit-animation-duration: 40s;
+  -webkit-animation-duration: 30s;
 }
 
 .animate-rtl {
   -webkit-animation: linear infinite;
   -webkit-animation-name: rtl;
-  -webkit-animation-duration: 40s;
+  -webkit-animation-duration: 30s;
 }
 
 .signup-content {
@@ -327,32 +327,8 @@ body {
   bottom: -90px;
 }
 
-.input-form:focus{
-  border-bottom-color: #111;
-}
-
-.owl-nav{
-  position: absolute;
-  bottom: -80px;
-  left:0;
-  color: #EC1C24;
-  font-size: 24px;
-}
-
-.owl-dots{
-  position: absolute;
-  bottom: -80px;
-  left:40px;
-  font-size: 28px;
-}
-
-@media screen and (max-width: 768px) {
-  .owl-nav {
-    left:42%;
-  }
-  .owl-dots {
-    left:50%;
-  }
+.input-form:focus {
+  border-color: #EC1C24;
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -395,6 +371,56 @@ body {
 @media screen and (max-width: 768px) {
   .sidenav {
     padding-top: 15px;
+  }
+}
+
+.owl-theme .owl-nav {
+  position: relative;
+  margin: 32px 0 0;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.owl-dots {
+  margin-top: 0.5rem;
+}
+
+.container .owl-carousel .owl-nav button.owl-next,
+.container .owl-carousel .owl-nav button.owl-prev,
+.container .owl-carousel button.owl-dot {
+  outline: none;
+  padding: 4px 8px !important;
+  margin: 0;
+  color: black !important;
+  background: transparent !important;
+}
+.container .owl-carousel .owl-nav button.owl-next,
+.container .owl-carousel .owl-nav button.owl-prev {
+  opacity: 0.4;
+}
+.container .owl-carousel .owl-nav button.owl-next:hover,
+.container .owl-carousel .owl-nav button.owl-prev:hover {
+  opacity: 0.8;
+}
+.container .owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+}
+.container .owl-theme .owl-dots .owl-dot.active span, .container .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #EC1C24;
+}
+
+@media (min-width: 1024px) {
+  .owl-theme .owl-nav {
+    margin-top: 80px;
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 48px;
+    font-size: 28px;
   }
 }
 

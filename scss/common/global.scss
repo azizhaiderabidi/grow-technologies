@@ -1,6 +1,6 @@
 @-webkit-keyframes ltr {
     0% {
-        left: 0;
+        left: -30%;
     }
 
     100% {
@@ -10,7 +10,7 @@
 
 @-webkit-keyframes rtl {
     0% {
-        right: 0;
+        right: -30%;
     }
 
     100% {
@@ -21,11 +21,11 @@
 .animate-ltr {
     -webkit-animation: linear infinite;
     -webkit-animation-name: ltr;
-    -webkit-animation-duration: 40s;
+    -webkit-animation-duration: 30s;
 }
 
 .animate-rtl {
     -webkit-animation: linear infinite;
     -webkit-animation-name: rtl;
-    -webkit-animation-duration: 40s;
+    -webkit-animation-duration: 30s;
 }

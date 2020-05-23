@@ -1,5 +1,11 @@
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({ loop: true, margin: 10, nav: true, items: 1 })
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    items: 1,
+    navText : ["<i class='far fa-chevron-left'></i>","<i class='far fa-chevron-right'></i>"]
+  })
 
   $('.header-nav-toggle').on('click', function (e) {
     e.stopImmediatePropagation();

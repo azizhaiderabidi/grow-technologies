@@ -113,10 +113,10 @@ body {
   bottom: -90px;
 }
 
-.input-form{
+.input-form {
   &:focus {
-      border-bottom-color: #111;
-    }
+    border-color: $color-red;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -159,33 +159,65 @@ body {
     margin-left: 50px;
   }
 
-  .owl-nav{
-    position: absolute;
-    bottom: -80px;
-    left:0;
-    color: #EC1C24;
-    font-size: 24px;
-
-    @media screen and (max-width: 768px) {
-      left:42%;
-    }
-
-  }
-  
-  .owl-dots{
-    position: absolute;
-    bottom: -80px;
-    left:40px;
-    font-size: 28px;
-
-    @media screen and (max-width: 768px) {
-      left:50%; 
-    }
-
-  }
-
   @media screen and (max-width: 768px) {
     padding-top: 15px;
   }
 
+}
+
+
+.owl-theme .owl-nav {
+  position: relative;
+  margin: 32px 0 0;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.owl-dots {
+  margin-top: 0.5rem;
+}
+
+.container {
+
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    outline: none;
+    padding: 4px 8px !important;
+    margin: 0;
+    color: black !important;
+    background: transparent !important;
+  }
+
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    opacity: .4;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 0;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $color-red;
+  }
+}
+
+@media (min-width: 1024px) {
+  .owl-theme .owl-nav {
+    margin-top: 80px;
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 48px;
+    font-size: 28px;
+  }
 }
