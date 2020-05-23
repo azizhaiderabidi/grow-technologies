@@ -55,6 +55,14 @@
 	-o-transition: $value;
 	-ms-transition: $value;
 }
+
+@mixin single-transition($type, $time, $movement: ease) {
+    -webkit-transition: $type $time $movement;
+    -moz-transition: $type $time $movement;
+    -o-transition: $type $time $movement;
+    transition: $type $time $movement;
+}
+
 @mixin animation($value) {
 	animation: $value;
 	-moz-animation: $value;

@@ -1,14 +1,20 @@
-(function($) {
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({ loop: true, margin: 10, nav: true, items: 1 })
 
-    $(".toggle-password").click(function() {
+  $('.header-nav-toggle').on('click', function (e) {
+    e.stopImmediatePropagation();
+    $('.header-nav').slideToggle();
+  });
 
-        $(this).toggleClass("zmdi-eye zmdi-eye-off");
-        var input = $($(this).attr("toggle"));
-        if (input.attr("type") == "password") {
-          input.attr("type", "text");
-        } else {
-          input.attr("type", "password");
-        }
-      });
+  $('.header-nav a').on('click', function (e) {
+    $('.header-nav a').removeClass('active');
+    $(this).addClass('active');
+  });
 
-})(jQuery);
+  $('body').on('click', function () {
+    const windowWidth = $(window).width();
+    if (windowWidth < 768) {
+      $('.header-nav').slideUp();
+    }
+  });
+});
