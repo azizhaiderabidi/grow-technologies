@@ -11,3 +11,145 @@
 // Responsive
 @import 'layouts/responsive.scss';
 
+$my-red: #EC1C24;
+$bg-mygray: #F9F6F3;
+$my-blue: #73E5E2;;
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+p {
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #777; }
+  
+h2 {
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px; }
+  
+  body{
+  font-family: 'Lato', sans-serif;
+  }
+  
+  .my-red{
+    background-color: $my-red;
+  }
+  
+  .bg-mygray{
+    background-color: $bg-mygray;
+  }
+  
+  %borderRB{
+    border-bottom: solid 2px $my-red {
+        left-radius: 2px;
+        right-radius: 2px;
+    }
+  }
+
+  .border-rb{
+    border-bottom: solid 3px $my-red;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; 
+  }
+  
+  .border-rb2{
+    @extend %borderRB;
+  }
+  
+  .active{
+    @extend %borderRB;
+    font-weight: 600;
+  }
+  
+  .navLink{
+    &:hover{
+        @extend %borderRB;
+    }
+  }
+  
+  .text-line{
+    border-bottom: solid 2px gainsboro;
+    width: 100px;
+  }
+  
+  .custom-top-left{
+    top: 150px;
+    left: 120px;
+  }
+  
+  .custom-bottom1{
+    bottom:-55px;
+  }
+  
+  .custom-bottom2{
+    bottom:-90px;
+  }
+  /*# sourceMappingURL=style.css.map */
+  
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+            color: #f1f1f1;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+      }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 15px;
+    }
+
+  }
+  
+  .openNavbtn{
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .collapsed{
+      display: none;
+    }
+  }
+

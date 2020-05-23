@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- Tailwind css -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Main css -->
+    <!-- Main css and scss -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="scss/style.scss">
+    <!-- <link rel="stylesheet" href="scss/style.scss"> -->
     <!-- AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!-- Owl-Carousel css -->
@@ -31,7 +31,7 @@
                 </svg>
             </div>
             <div>
-                <ul class='flex flex-row text-base not-italic font-normal'>
+                <ul class='flex flex-row text-base not-italic font-normal collapsed'>
                     <li class='p-4 ml-4 navLink active'>
                         <a href="#home">Home</a>
                     </li>
@@ -45,14 +45,15 @@
                         <a href="#print">Print and Media</a>
                     </li>
                     <li class='p-4 ml-4'>
-                        <a href="#contact" class="bg-red-600 font-semibold hover:bg-blue-700 text-white py-4 px-6 rounded-full navLink2">
+                        <a href="#contact" class="my-red font-semibold hover:bg-blue-700 text-white py-4 px-6 rounded-full">
                             Contact Us
                         </a>
                     </li>
                 </ul>
                 <div class='openNavbtn p-4 ml-4'>
-                    <span class='bg-red-600 text-white py-4 px-4 rounded-full' onclick="openNav()">v</span>
+                    <img src="./images/open-menu.png" onclick="openNav()">
                 </div>
+                <!-- SideNav -->
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#home" onclick="closeNav()">Home</a>
@@ -97,7 +98,7 @@
             </div>
         </div>
         <!-- Page Section 2 -->
-        <div id='consulting' class='bg-purple-200'>
+        <div id='consulting' class='relative bg-mygray'>
             <svg viewBox="0 0 1680 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="white" />
             </svg>
@@ -117,11 +118,13 @@
                     </div>
                 </div>
             </div>
+            <img class='absolute top-0 right-0' src="./images/plant.svg" alt="plant">
+            <img class='absolute bottom-0 left-0' src="./images/pie-chart.svg" alt="piechart">
         </div>
         <!-- Page Section 3 -->
-        <div id='children' class='bg-white'>
-            <svg viewBox="0 0 1680 80" fill="#e9d8fd" xmlns="http://www.w3.org/2000/svg">
-                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#e9d8fd" />
+        <div id='children' class='relative bg-white'>
+            <svg viewBox="0 0 1680 80" fill="#F9F6F3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#F9F6F3" />
             </svg>
             <div class='py-48 container mx-auto'>
                 <div class='flex flex-wrap items-center justify-around'>
@@ -138,9 +141,10 @@
                     </div>
                 </div>
             </div>
+            <img class='absolute top-0 right-0' src="./images/triangle-ruler 1.svg" alt="triangular-ruler">
         </div>
         <!-- Page Section 4 -->
-        <div id='print' class='bg-purple-200'>
+        <div id='print' class='bg-mygray'>
             <svg viewBox="0 0 1680 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="white" />
             </svg>
@@ -160,9 +164,9 @@
             </div>
         </div>
         <!-- Page Section 5 -->
-        <div class='bg-white'>
-            <svg viewBox="0 0 1680 80" fill="#e9d8fd" xmlns="http://www.w3.org/2000/svg">
-                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#e9d8fd" />
+        <div class='relative bg-white'>
+            <svg viewBox="0 0 1680 80" fill="#F9F6F3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#F9F6F3" />
             </svg>
             <div class='py-48 container mx-auto'>
                 <div class='flex justify-center'>
@@ -217,9 +221,10 @@
                     </div>
                 </div>
             </div>
+            <img class='absolute custom-top-left' src="./images/speech-modal.svg" alt="triangular-ruler">
         </div>
         <!-- Page Section 6 -->
-        <div class='bg-purple-200'>
+        <div class='relative bg-mygray'>
             <svg viewBox="0 0 1680 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="white" />
             </svg>
@@ -234,11 +239,13 @@
                     <img src="./images/bg-221.png" alt="">
                 </div>
             </div>
+            <img class='absolute custom-bottom1 left-0' src="./images/autumn-trees.svg" alt="triangular-ruler">
+            <img class='absolute custom-bottom2 right-0' src="./images/hills.svg" alt="triangular-ruler">
         </div>
         <!-- Page Section 7 -->
         <div id='contact' class='bg-white'>
-            <svg viewBox="0 0 1680 80" fill="#e9d8fd" xmlns="http://www.w3.org/2000/svg">
-                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#e9d8fd" />
+            <svg viewBox="0 0 1680 80" fill="#F9F6F3" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#F9F6F3" />
             </svg>
             <div class='py-48 container mx-auto'>
                 <div class='flex justify-center pb-5'>
