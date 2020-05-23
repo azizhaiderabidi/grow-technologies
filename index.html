@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Design 1</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Owl-Carousel css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+</head>
+
+<body>
+    <div id='home' class='w-100 h-auto'>
+        <!-- NavBar Section-->
+        <nav class='flex flex-row justify-between py-5 px-8'>
+            <div>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.9" d="M19.9998 40C16.711 39.9999 13.473 39.1889 10.5725 37.6386C7.67197 36.0883 5.19854 33.8467 3.37123 31.1123C1.54392 28.3779 0.419128 25.235 0.0964818 21.9621C-0.226164 18.6892 0.263297 15.3872 1.5215 12.3486C2.7797 9.30999 4.76782 6.62856 7.30978 4.54178C9.85174 2.455 12.8691 1.02727 16.0946 0.385045C19.3201 -0.257183 22.6542 -0.0940931 25.8016 0.859879C28.949 1.81385 31.8126 3.52926 34.1387 5.85417L31.1236 8.89045C28.6106 6.37907 25.3224 4.79095 21.793 4.38399C18.2636 3.97703 14.7003 4.77513 11.6817 6.64868C8.66306 8.52224 6.36645 11.3612 5.16481 14.7046C3.96316 18.048 3.92706 21.6994 5.06234 25.0658C6.19762 28.4323 8.43763 31.3162 11.4186 33.2491C14.3995 35.1819 17.9464 36.0504 21.4831 35.7133C25.0199 35.3762 28.3388 33.8534 30.901 31.3923C33.4632 28.9311 35.1181 25.676 35.597 22.1557H22.1203V30.0247H17.8934V17.8725H40V19.9859C39.9963 25.2891 37.8879 30.374 34.138 34.1239C30.388 37.8738 25.3031 39.9822 19.9998 39.9859V40Z"
+                        fill="black" />
+                </svg>
+            </div>
+            <div>
+                <ul class='flex flex-row text-base not-italic font-normal'>
+                    <li class='p-4 ml-4 navLink active'>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class='p-4 ml-4 navLink'>
+                        <a href="#consulting">IT Consulting and Training</a>
+                    </li>
+                    <li class='p-4 ml-4 navLink'>
+                        <a href="#children">Children and Education</a>
+                    </li>
+                    <li class='p-4 ml-4 navLink'>
+                        <a href="#print">Print and Media</a>
+                    </li>
+                    <li class='p-4 ml-4'>
+                        <a href="#contact" class="bg-red-600 font-semibold hover:bg-blue-700 text-white py-4 px-6 rounded-full navLink2">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <div class='openNavbtn p-4 ml-4'>
+                    <span class='bg-red-600 text-white py-4 px-4 rounded-full' onclick="openNav()">v</span>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#consulting" onclick="closeNav()">IT Consulting and Training</a>
+                    <a href="#children" onclick="closeNav()">Children and Education</a>
+                    <a href="#print" onclick="closeNav()">Print and Media</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Section 1 -->
+        <div class='container mx-auto py-48'>
+            <div class='flex flex-wrap-reverse items-center justify-around'>
+                <div data-aos="fade-left">
+                    <img src="./images/man-holding-box 1.png" alt="">
+                </div>
+                <!-- <div class="owl-carousel owl-theme">
+                    // Slide 1
+                    <div data-aos="fade-right" class='item'>
+                        <h2 class='text-left font-semibold text-4xl'>Grow is
+                            <span class='pb-2 border-rb'>Innovative</span>
+                        </h2>
+                        <p class='text-left max-w-sm text-lg font-normal'>In at cursus elit, morbi sagittis nulla vivamus diam nec. Enim non risus ornare vitae aliquam proin cursus
+                            lacus. Malesuada suscipit sit scelerisque varius.</p>
+                    </div>
+                    // Slide 2
+                    <div data-aos="fade-right" class='item'>
+                            <h2 class='text-left font-semibold text-4xl'>Grow is
+                                <span class='pb-2 border-rb'>Innovative</span>
+                            </h2>
+                            <p class='text-left max-w-sm text-lg font-normal'>In at cursus elit, morbi sagittis nulla vivamus diam nec. Enim non risus ornare vitae aliquam proin cursus
+                                lacus. Malesuada suscipit sit scelerisque varius.</p>
+                        </div>
+                </div> -->
+                <div data-aos="fade-right" class='item'>
+                        <h2 class='text-left font-semibold text-4xl'>Grow is
+                            <span class='pb-2 border-rb'>Innovative</span>
+                        </h2>
+                        <p class='text-left max-w-sm text-lg font-normal'>In at cursus elit, morbi sagittis nulla vivamus diam nec. Enim non risus ornare vitae aliquam proin cursus
+                            lacus. Malesuada suscipit sit scelerisque varius.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Page Section 2 -->
+        <div id='consulting' class='bg-purple-200'>
+            <svg viewBox="0 0 1680 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="white" />
+            </svg>
+            <div class='container mx-auto py-48'>
+                <div class='flex flex-wrap items-center justify-around'>
+                    <div data-aos="fade-right">
+                        <h2 class='text-left font-semibold text-4xl'>IT Consulting and Training</h2>
+                        <p class='text-left max-w-sm text-lg font-normal'>We offer full-cycle development services for web, mobile and desktop including dynamic web and e-commerce
+                            portals, Mobile App development for Android and iOS on various frameworks, mobile back-ends,
+                            provide integration and maintenance services.</p>
+                        <div class='mt-5'>
+                            <span class='text-left font-semibold text-base text-black pb-2 border-rb2'>Education and Training content development</span>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <img src="./images/Group.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Section 3 -->
+        <div id='children' class='bg-white'>
+            <svg viewBox="0 0 1680 80" fill="#e9d8fd" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#e9d8fd" />
+            </svg>
+            <div class='py-48 container mx-auto'>
+                <div class='flex flex-wrap items-center justify-around'>
+                    <div data-aos="fade-left">
+                        <h2 class='text-left font-semibold text-4xl'>Childcare and Education</h2>
+                        <p class='text-left max-w-sm text-lg font-normal'>We are a leader in digital content development and delivery for Primary, Secondary and Non-academic
+                            training programs.</p>
+                        <div class='mt-5'>
+                            <span class='text-left font-semibold text-base text-black pb-2 border-rb2'>Education and Training content development</span>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right">
+                        <img src="./images/Illustration.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Section 4 -->
+        <div id='print' class='bg-purple-200'>
+            <svg viewBox="0 0 1680 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="white" />
+            </svg>
+            <div class='py-48 container mx-auto'>
+                <div class='flex flex-wrap-reverse items-center justify-around'>
+                    <div data-aos="fade-right">
+                        <img src="./images/example-scene-2 1.png" alt="">
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 class='text-left font-semibold text-4xl'>Print and Media</h2>
+                        <p class='text-left max-w-sm text-lg font-normal'>Our brand team of designers, animators and copywriters transform ideas to communication masterpieces.</p>
+                        <div class='mt-5'>
+                            <span class='text-left font-semibold text-base text-black pb-2 border-rb2'>Creative Agency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Section 5 -->
+        <div class='bg-white'>
+            <svg viewBox="0 0 1680 80" fill="#e9d8fd" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#e9d8fd" />
+            </svg>
+            <div class='py-48 container mx-auto'>
+                <div class='flex justify-center'>
+                    <h2 class='font-semibold text-4xl'>What our clients say about us</h2>
+                </div>
+                <div class='flex flex-wrap justify-around text-lg font-normal'>
+                    <div data-aos="zoom-in" class='flex flex-col'>
+                        <div class='py-5 flex justify-center'>
+                            <img class="w-30 h-30 rounded-full mr-4" src="./images/Ellipse6.png" alt="Avatar of Jonathan Reinink">
+                            <div class="w-30 h-30 bg-gray-200"></div>
+                        </div>
+                        <p class='text-center max-w-xs'>Facilisi vel nunc nisi proin purus. At tristique viverra scelerisque adipiscing fermentum a mi faucibus
+                            dui. Sapien sed ipsum diam arcu magna a tellus massa urna. Purus vel accumsan, posuere mus scelerisque
+                            elementum gravida ut massa. Nunc praesent viverra quis mi viverra molestie pellentesque cursus
+                            eu.
+                        </p>
+                        <div class='flex justify-center py-3'>
+                            <div class='text-line'></div>
+                        </div>
+                        <p class='text-center text-red-500'>Calvin Holmes</p>
+                        <p class='text-center pt-2'> Intel</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="200" class='flex flex-col'>
+                        <div class='py-5 flex justify-center'>
+                            <img class="w-30 h-30 rounded-full mr-4" src="./images/Ellipse7.png" alt="Avatar of Jonathan Reinink">
+                        </div>
+                        <p class='text-center max-w-xs'>Facilisi vel nunc nisi proin purus. At tristique viverra scelerisque adipiscing fermentum a mi faucibus
+                            dui. Sapien sed ipsum diam arcu magna a tellus massa urna. Purus vel accumsan, posuere mus scelerisque
+                            elementum gravida ut massa. Nunc praesent viverra quis mi viverra molestie pellentesque cursus
+                            eu.
+                        </p>
+                        <div class='flex justify-center py-3'>
+                            <div class='text-line'></div>
+                        </div>
+                        <p class='text-center text-red-500'>Bill Roberts</p>
+                        <p class='text-center pt-2'> MasterCard</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400" class='flex flex-col'>
+                        <div class='py-5 flex justify-center'>
+                            <img class="w-30 h-30 rounded-full mr-4" src="./images/Ellipse8.png" alt="Avatar of Jonathan Reinink">
+                        </div>
+                        <p class='text-center max-w-xs'>Facilisi vel nunc nisi proin purus. At tristique viverra scelerisque adipiscing fermentum a mi faucibus
+                            dui. Sapien sed ipsum diam arcu magna a tellus massa urna. Purus vel accumsan, posuere mus scelerisque
+                            elementum gravida ut massa. Nunc praesent viverra quis mi viverra molestie pellentesque cursus
+                            eu.
+                        </p>
+                        <div class='flex justify-center py-3'>
+                            <div class='text-line'></div>
+                        </div>
+                        <p class='text-center text-red-500'>Tom Hodward</p>
+                        <p class='text-center pt-2'> Microsoft</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Section 6 -->
+        <div class='bg-purple-200'>
+            <svg viewBox="0 0 1680 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="white" />
+            </svg>
+            <div class='py-48 container mx-auto'>
+                <div class='flex justify-center'>
+                    <h2 class='font-semibold text-4xl'>We have a track record of delivering
+                        <span class='pb-2 border-rb'>World Class</span> Solutions</h2>
+                </div>
+                <p class='text-center'>
+                    <span class='font-bold text-black'>3000</span> Happy Customers in over 25 Countries use our solutions every day</p>
+                <div data-aos="zoom-out" class='flex justify-center'>
+                    <img src="./images/bg-221.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Page Section 7 -->
+        <div id='contact' class='bg-white'>
+            <svg viewBox="0 0 1680 80" fill="#e9d8fd" xmlns="http://www.w3.org/2000/svg">
+                <path d="M420 20C210 20 105 35 0 50V0H1680V50C1575 65 1470 80 1260 80C840 80 840 20 420 20Z" fill="#e9d8fd" />
+            </svg>
+            <div class='py-48 container mx-auto'>
+                <div class='flex justify-center pb-5'>
+                    <h2 class='font-semibold text-4xl'>Contact Us</h2>
+                </div>
+                <div class='flex flex-wrap items-center justify-evenly'>
+                    <div class='flex flex-col'>
+                        <div data-aos="fade-up" class='py-5 flex items-center justify-around'>
+                            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="23" cy="32" r="8" fill="#FBDC8E" />
+                                <path d="M19.5 0C13.25 0 8.25 5.07812 8.25 11.25C8.25 17.1094 12.625 21.7969 18.25 22.4219V38.5156L19.1094 39.8438C19.2656 40.0781 19.6562 40.0781 19.8125 39.8438L20.75 38.5156V22.4219C26.2969 21.7969 30.75 17.1094 30.75 11.25C30.75 5.07812 25.6719 0 19.5 0ZM19.5 20C14.6562 20 10.75 16.0938 10.75 11.25C10.75 6.48438 14.6562 2.5 19.5 2.5C24.2656 2.5 28.25 6.48438 28.25 11.25C28.25 16.0938 24.2656 20 19.5 20ZM19.5 5C15.9844 5 13.25 7.8125 13.25 11.25C13.25 11.9531 13.7969 12.5 14.5 12.5C15.125 12.5 15.75 11.9531 15.75 11.25C15.75 9.21875 17.3906 7.5 19.5 7.5C20.125 7.5 20.75 6.95312 20.75 6.25C20.75 5.625 20.125 5 19.5 5Z"
+                                    fill="#73E5E2" />
+                            </svg>
+                            <p class='max-w-xs'>Westcom Point, Mahiga Mairu Rd, Westlands, Nairobi, Kenya</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="200" class='py-5 flex items-center flex-start'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.3594 9.75781C27.6367 6.96875 23.918 5.375 19.9336 5.375C11.832 5.375 5.19141 12.0156 5.19141 20.1172C5.19141 22.7734 5.92188 25.2969 7.18359 27.4883L5.125 35.125L12.8945 33.1328C15.0859 34.2617 17.4766 34.9258 19.9336 34.9258C28.1016 34.9258 34.875 28.2852 34.875 20.1836C34.875 16.1992 33.1484 12.5469 30.3594 9.75781ZM19.9336 32.4023C17.7422 32.4023 15.6172 31.8047 13.6914 30.6758L13.293 30.4102L8.64453 31.6719L9.90625 27.1562L9.57422 26.6914C8.37891 24.6992 7.71484 22.4414 7.71484 20.1172C7.71484 13.4102 13.2266 7.89844 20 7.89844C23.2539 7.89844 26.3086 9.16016 28.6328 11.4844C30.957 13.8086 32.3516 16.8633 32.3516 20.1836C32.3516 26.8906 26.707 32.4023 19.9336 32.4023ZM26.707 23.2383C26.3086 23.0391 24.5156 22.1758 24.1836 22.043C23.8516 21.9102 23.5859 21.8438 23.3203 22.2422C23.1211 22.5742 22.3906 23.4375 22.1914 23.7031C21.9258 23.9023 21.7266 23.9688 21.3945 23.7695C19.2031 22.707 17.8086 21.8438 16.3477 19.3867C15.9492 18.7227 16.7461 18.7891 17.4102 17.3945C17.543 17.1289 17.4766 16.9297 17.4102 16.7305C17.3438 16.5312 16.5469 14.7383 16.2812 14.0078C15.9492 13.2773 15.6836 13.3438 15.418 13.3438C15.2188 13.3438 14.9531 13.3438 14.7539 13.3438C14.4883 13.3438 14.0898 13.4102 13.7578 13.8086C13.4258 14.207 12.4961 15.0703 12.4961 16.8633C12.4961 18.7227 13.7578 20.4492 13.957 20.7148C14.1562 20.9141 16.5469 24.6328 20.2656 26.2266C22.5898 27.2891 23.5195 27.3555 24.7148 27.1562C25.3789 27.0898 26.8398 26.293 27.1719 25.4297C27.5039 24.5664 27.5039 23.8359 27.3711 23.7031C27.3047 23.5039 27.0391 23.4375 26.707 23.2383Z"
+                                    fill="#73E5E2" />
+                            </svg>
+                            <p class='text-lef'>+254 748812042</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="400" class='py-5 flex items-center flex-start'>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M33.8125 7.5H6.1875C4.39453 7.5 3 8.96094 3 10.6875V29.8125C3 31.6055 4.39453 33 6.1875 33H33.8125C35.5391 33 37 31.6055 37 29.8125V10.6875C37 8.96094 35.5391 7.5 33.8125 7.5ZM6.1875 9.625H33.8125C34.3438 9.625 34.875 10.1562 34.875 10.6875V13.4766C33.4141 14.6719 31.2891 16.3984 24.8477 21.5117C23.7188 22.4414 21.5273 24.5664 20 24.5C18.4062 24.5664 16.2148 22.4414 15.0859 21.5117C8.64453 16.3984 6.51953 14.6719 5.125 13.4766V10.6875C5.125 10.1562 5.58984 9.625 6.1875 9.625ZM33.8125 30.875H6.1875C5.58984 30.875 5.125 30.4102 5.125 29.8125V16.1992C6.58594 17.4609 8.97656 19.3867 13.7578 23.1719C15.1523 24.3008 17.543 26.6914 20 26.625C22.3906 26.6914 24.7812 24.3008 26.1758 23.1719C30.957 19.3867 33.3477 17.4609 34.875 16.1992V29.8125C34.875 30.4102 34.3438 30.875 33.8125 30.875Z"
+                                    fill="#73E5E2" />
+                                <circle cx="20" cy="25" r="4" fill="#FBDC8E" />
+                                <rect x="13" y="12" width="15" height="1" fill="#C4C4C4" />
+                                <rect x="13" y="15" width="15" height="1" fill="#C4C4C4" />
+                                <rect x="16" y="18" width="9" height="1" fill="#C4C4C4" />
+                            </svg>
+                            <p class='max-w-xs pl-2'>info@growmobile.technology</p>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="px-8 pt-6 pb-8 mb-4">
+                            <div class="mb-4">
+                                <input class="border-b w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+                                    type="text" placeholder="Your Name">
+                            </div>
+                            <div class="mb-4">
+                                <input class="border-b  w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email"
+                                    type="text" placeholder="Email">
+                            </div>
+                            <div class="mb-6">
+                                <textarea class="border-b w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="message"
+                                    rows='10' placeholder="Message">
+                                                        </textarea>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <button class="bg-teal-400 hover:bg-blue-700 text-white font-bold py-2 px-16 rounded-full focus:outline-none focus:shadow-outline"
+                                    type="button">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script> AOS.init(); </script>
+    <script>$(document).ready(function(){$(".owl-carousel").owlCarousel();});</script>
+    <script>$('.owl-carousel').owlCarousel({loop:true,margin:10,nav:true,items:1})</script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+</html>
