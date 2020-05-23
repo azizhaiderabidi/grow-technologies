@@ -97,7 +97,7 @@ body {
 
 .text-line {
   border-bottom: solid 2px gainsboro;
-  width: 100px;
+  width: 110px;
 }
 
 .custom-top-left {
@@ -111,6 +111,12 @@ body {
 
 .custom-bottom2 {
   bottom: -90px;
+}
+
+.input-form{
+  &:focus {
+      border-bottom-color: #111;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -151,6 +157,31 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+
+  .owl-nav{
+    position: absolute;
+    bottom: -80px;
+    left:0;
+    color: #EC1C24;
+    font-size: 24px;
+
+    @media screen and (max-width: 768px) {
+      left:42%;
+    }
+
+  }
+  
+  .owl-dots{
+    position: absolute;
+    bottom: -80px;
+    left:40px;
+    font-size: 28px;
+
+    @media screen and (max-width: 768px) {
+      left:50%; 
+    }
+
   }
 
   @media screen and (max-width: 768px) {
